@@ -1,0 +1,141 @@
+@import 'varibles';
+.container{
+  max-width: $max-width;
+  margin: 0 auto;
+  // overflow: hidden;
+}
+
+.padd{
+padding: 6rem 6rem;
+width: 100%;
+
+} 
+.padd1{
+  padding: 14rem 13rem;
+  width: 100%;
+}
+.heading-primary{
+  display: block;
+}
+
+//  padding
+.py{
+  &-1{
+    padding: 1rem 0;
+  }
+  &-2{
+    padding: 2rem 0;
+  }
+  &-3{
+    padding: 3rem 0;
+  }
+  &-4{
+    padding: 4rem 0;
+  }
+}
+//  margin
+.my{
+  &-1{
+    margin: 1rem 0;
+  }
+  &-2{
+    margin: 2rem 0;
+  }
+  &-3{
+    margin: 3rem 0;
+  }
+  &-4{
+    margin: 4rem 0;
+  }
+}
+%btn{
+  display: inline-block;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn{
+  &-whiteborder{
+    @extend %btn;
+    padding: 1.5rem 3rem;
+    background-color: $tintblue-color;
+    color: $white-color;
+    font-size: 1.5rem;
+    border: 2px solid rgba(244, 246, 252, 0.2);
+border-radius: 41px;
+       &:hover{
+        background-color: $drak-color;
+       }
+}
+&-yellowborder{
+  @extend %btn;
+  padding: 1.7rem 3.9rem;
+  background-color: $yellow-color;
+  border-radius: 41px;
+  color: $drak-color;
+  font-size: 1.6rem;
+   &:hover{
+    background-color: #FDE4A6;
+   }
+}
+&-price-btn{
+  @extend %btn;
+  padding: 1.5rem 5rem;
+background-color: $Darkblue-color;
+border-radius: 41px;
+color: $light-color;
+font-size: 1.6rem;
+ &:hover{
+  background-color:$yellow-color;
+  color: $Darkblue-color;
+ }
+ }
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+}
+.grid3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+}
+.grid4{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+}
+.gridhalf{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.gridhalf2{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.flex{
+  display: flex;
+  // align-items: center;
+}
+.center{
+  text-align: center;
+}
+
+.circle{
+  // padding: 5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: $royalblue-color;
+ height: 2rem;
+  margin-right: 1rem;
+  width: 4rem;
+}
