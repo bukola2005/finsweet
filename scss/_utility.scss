@@ -7,12 +7,12 @@
 
 .padd{
 padding: 6rem 6rem;
-width: 100%;
+// width: 100%;
 
 } 
 .padd1{
-  padding: 14rem 13rem;
-  width: 100%;
+  padding: 14rem 6rem;
+  // width: 100%;
 }
 .heading-primary{
   display: block;
@@ -138,4 +138,30 @@ font-size: 1.6rem;
  height: 2rem;
   margin-right: 1rem;
   width: 4rem;
+}
+
+@keyframes moveInLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+}
+80%{
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+}
+  100%{
+    opacity: 1;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+}
 }

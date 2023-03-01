@@ -190,7 +190,7 @@ header{
   }
 }
 #project{
-  & .flex{
+  & .viewproject{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5rem;
@@ -211,11 +211,12 @@ header{
   }
   }
 
-  .gridhalf2{
-gap: 2rem;
-justify-content: flex-start;
+  .layout{
+//     display: grid;
+//     grid-template-columns: 2fr 1fr;
+// gap: 2rem;
+// justify-content: flex-start;
 
-  }
   .design{
     // height: 18vh;
   background-image:linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%) , url(/dist/css/Card.jpg);
@@ -224,20 +225,17 @@ justify-content: flex-start;
   background-position: top;
   // width: 70%;
   position: relative;
-display: inline-block;
   & .text-box{
-    display: block;
-  position: absolute;
-  top: 70%;
-  left: 30%;
-  transform: translate(-38%,-60%);
-  -webkit-transform: translate(-38%,-60%);
-  -moz-transform: translate(-38%,-60%);
-  -ms-transform: translate(-38%,-60%);
-  -o-transform: translate(-38%,-60%);
-  //text-align: center;
-
-  h2{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-38%,-60%);
+    -webkit-transform: translate(-38%,-60%);
+    -moz-transform: translate(-38%,-60%);
+    -ms-transform: translate(-38%,-60%);
+    -o-transform: translate(-38%,-60%);
+    //text-align: center;
+    h2{
     color: $white-color;
     font-size: 3.5rem;
   }
@@ -259,6 +257,11 @@ display: inline-block;
   }
   }
   }
+
+  // & .test{
+  //   // display: ;
+  // }
+}
 }
 
 #product{
@@ -448,7 +451,7 @@ p{
       background-position: top;
        position: relative;
        background-repeat: no-repeat;
-       min-height: 62.5rem;
+       min-height: 70.9rem;
 
        & .text-box2{
         line-height: 1.4;
@@ -486,27 +489,62 @@ p{
         color: $light-color;
       }
       form{
-        .input{
-          background-color: $tintblue-color;
-          color: $white-color;
-          padding: 2.5rem 6rem;
+        .form-control{
+          position: relative;
+          margin-bottom:  10px;
+          padding-bottom: 20px;
           width: 100%;
-          outline: none;
-          border: 1px solid $white-color;
-          border-radius: 0.7rem;
-          -webkit-border-radius: 0.7rem;
-          -moz-border-radius: 0.7rem;
-          -ms-border-radius: 0.7rem;
-          -o-border-radius: 0.7rem;
-          margin-bottom: 2rem;
-         
 
-          &::placeholder{
-            color: $light-color;
-            opacity: 0.5;
+          & small{
+            color:$error-color;
+            font-size: 1.6rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
           }
+
+          &.error small{
+            visibility: visible;
+          }
+
+          &.success .input{
+            border-color: $success-color;
+          }
+          &.error .input{
+            border-color: $error-color;
+          }
+         & .input{
+            background-color: $tintblue-color;
+            color: $white-color;
+            padding: 2.5rem 6rem;
+            width: 100%;
+            outline: none;
+            border: 1px solid $white-color;
+            border-radius: 0.7rem;
+            -webkit-border-radius: 0.7rem;
+            -moz-border-radius: 0.7rem;
+            -ms-border-radius: 0.7rem;
+            -o-border-radius: 0.7rem;
+            margin-bottom: 2rem;
+           
+  
+            &::placeholder{
+              color: $light-color;
+              opacity: 0.5;
+            }
+
+            // &:focus{
+            //   outline: 0;
+            //   border-color: $tintblue-color;
+            // }
+
+
         
-}
+          
+  }
+         }
+       
       button{
         margin-top: 1rem;
         width: 100%;
@@ -585,8 +623,7 @@ footer{
   & .grid2{
     gap: 5rem;
 
-    .footer-text{
-      position: relative;
+    .footer-text{ 
       img{
         width: 30%;
       }
@@ -596,13 +633,13 @@ footer{
         font-size: 1.7rem;
       }
 
-      .inner-footer{
-        position: absolute;
-        bottom: -27%;
+     
+
+      .inner-footer{  
         gap: 3rem;
         background-color: $yellow-color;
-        padding: 3rem;
-        width: 70%;
+        padding: 2rem;
+        width: 100%;
         h3{
           color: $Darkblue-color;
           font-size: 1.5rem;
@@ -1029,6 +1066,7 @@ align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  // min-width: 100vh;
 
   & .center{
     h2{
@@ -1047,8 +1085,8 @@ align-items: center;
   align-items: flex-start;
   background-color: $light-color;
   border-radius: 12px;
-  padding: 6rem;
-  // width: 100%;
+  padding: 3rem;
+  width: 100%;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;

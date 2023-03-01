@@ -102,9 +102,9 @@
   </section>
 
 
-  <section id="project" class="padd">
+  <!-- <section id="project" class="padd">
     <div class="container">
-      <div class="flex">
+      <div class="flex viewproject">
         <h2>View our projects</h2>
         <div class="flex">
           <a href="#">View More</a>
@@ -112,7 +112,7 @@
         </div>
       </div>
 
-      <div class="gridhalf2">
+      <div class="layout">
         <div class="design">
         <div class="text-box">
           <h2>Workhub office Webflow Webflow Design</h2>
@@ -122,15 +122,15 @@
             <img src="/finsweet img/Arrow 4.svg" alt="img">
           </div>
         </div>
-           <!-- <img src="/finsweet img/Card.svg" alt="img"> -->
+          
         </div>
-        <div class="test">
+        <div class="test grid2">
           <img src="/finsweet img/Hover Overlay.svg" alt="img" class="my-3">
         <img src="/finsweet img/Card (1).svg" alt="img">
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section id="product" class="padd">
     <div class="container">
@@ -306,12 +306,24 @@
       <h2>Send inquiry</h2>
       <h3 class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</h3>
 
-      <form action="#">
-        <input type="text" name="name" id="name" placeholder="Your Name" class="heading-primary input">
-        <input type="email" name="email" id="email" placeholder="Email" class="heading-primary input">
-        <input type="url" name="url" id="url" placeholder="Paste your Figma design URL" class="heading-primary input way">
+      <form id="form">
+        <div class="form-control">
+          <input type="text" name="name" id="name" placeholder="Your Name" class="heading-primary input">
+          <small>Error message</small>
+        </div>
+        
+        <div class="form-control">
+          <input type="text" name="email" id="email" placeholder="Email" class="heading-primary input">
+          <small>Error message</small>
+        </div>
 
-        <button class="btn btn-yellowborder">Send an Inquiry</button>
+        <div class="form-control">
+          <input type="url" name="url" id="url" placeholder="Paste your Figma design URL" class="heading-primary input way">
+          <small>Error message</small>
+        </div>
+
+
+        <button class="btn btn-yellowborder" type="submit">Send an Inquiry</button>
         <div class="flex">
           <a href="#">Get in touch with us</a>
         <img src="/finsweet img/Arrow 1.svg" alt="img">
