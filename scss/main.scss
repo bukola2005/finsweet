@@ -926,41 +926,44 @@ footer{
         text-align: center;
       }
      
-      &:hover{
-        background-color: $tintblue-color;
-        & .flex-top{
-          h2{
-            color: $white-color;
-          }
-          .change-yellow{
-            color: $yellow-color
-          }
-        }
+      // &.viewclick{
+      //   background-color: $tintblue-color;
+      //   & .flex-top{
+      //     h2{
+      //       color: $white-color;
+      //     }
+      //     .change-yellow{
+      //       color: $yellow-color
+      //     }
+      //   }
         
-        & .inner-text{
-          h3{
-            color: $white-color;
-          }
-          p{
-            color: $white-color;
-          }
-        }
-        & .bouns{
-          & .flex{
-            h3{
-              color: $white-color;
-            }
-          }
-        }
+      //   & .inner-text{
+      //     h3{
+      //       color: $white-color;
+      //     }
+      //     p{
+      //       color: $white-color;
+      //     }
+      //   }
+      //   & .bouns{
+      //     & .flex{
+      //       h3{
+      //         color: $white-color;
+      //       }
+      //     }
+      //   }
 
-        .btn-price-btn{
-          // display: block;
-          // align-items: center;
-          // justify-content: center;
-          background-color: $yellow-color;
-          color: $Darkblue-color;
+      //   .btn-price-btn{
+      //     // display: block;
+      //     // align-items: center;
+      //     // justify-content: center;
+      //     background-color: $yellow-color;
+      //     color: $Darkblue-color;
 
-        }
+      //   }
+      // }
+      &.viewclick {
+        background-color: $tintblue-color;
       }
     }
   }
